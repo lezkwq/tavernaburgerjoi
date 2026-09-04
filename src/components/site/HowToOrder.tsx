@@ -4,44 +4,130 @@ import { ActionLink } from "./primitives";
 const passos = [
   {
     n: "01",
-    titulo: "Escolha pelo cardápio online",
-    texto: "O cardápio com os hambúrgueres, acompanhamentos e bebidas está sempre atualizado.",
+    titulo: "Escolha o seu",
+    texto:
+      "Abra o cardápio online e escolha entre hambúrgueres, acompanhamentos e bebidas da casa.",
   },
   {
     n: "02",
     titulo: "Feche o pedido",
     texto:
-      "Conclua pelo cardápio online ou chame no WhatsApp se preferir combinar tudo por mensagem.",
+      "Finalize direto pelo cardápio ou fale com a Taverna pelo WhatsApp se preferir pedir por mensagem.",
   },
   {
     n: "03",
-    titulo: "Escolha como receber",
-    texto: "Entrega sem contato, retirada na porta ou mesa no salão, de terça a domingo.",
+    titulo: "Decida onde comer",
+    texto:
+      "Receba em casa, retire na porta ou venha comer no salão. A Taverna abre de terça a domingo.",
   },
 ] as const;
 
 export function HowToOrder() {
   return (
-    <section id="como-pedir" className="grain bg-charcoal section-y text-cream">
-      <div className="page-x mx-auto max-w-[1400px]">
-        <div className="grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <p className="label-micro text-gold">Como pedir</p>
-            <h2 className="mt-4 text-display-sm">
-              Três
-              <br />
-              <span className="accent-word text-gold lowercase">passos</span>
-            </h2>
-            <p className="mt-6 max-w-sm text-base text-cream/70">
-              Na primeira compra pelo cardápio online, o cupom {taverna.cupom} dá dez reais de
-              desconto.
+    <section
+      id="como-pedir"
+      className="grain relative overflow-hidden bg-charcoal section-y text-cream"
+    >
+      <div className="page-x relative mx-auto max-w-[1400px]">
+        {/* =====================================================
+            CABEÇALHO
+        ====================================================== */}
+        <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-7">
+            <p className="label-micro text-gold">
+              Como pedir
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <ActionLink href={taverna.pedidoUrl} target="_blank" rel="noreferrer noopener">
+
+            <h2 className="mt-4 text-display-md">
+              Da vontade
+              <br />
+              até a
+              <span className="accent-word ml-3 text-gold lowercase">
+                mesa
+              </span>
+            </h2>
+          </div>
+
+          <p className="max-w-sm text-sm leading-relaxed text-cream/55 lg:col-span-4 lg:col-start-9 lg:justify-self-end lg:text-right">
+            Escolhe, pede e decide onde comer. O resto fica com a chapa.
+          </p>
+        </div>
+
+        {/* =====================================================
+            PASSOS
+        ====================================================== */}
+        <ol className="mt-14 border-t border-cream/20 lg:mt-20">
+          {passos.map((passo) => (
+            <li
+              key={passo.n}
+              className="group grid gap-5 border-b border-cream/20 py-8 sm:grid-cols-[100px_1fr] lg:grid-cols-12 lg:items-center lg:py-10"
+            >
+              {/* Número */}
+              <div className="lg:col-span-2">
+                <span className="font-display text-[clamp(3.5rem,6vw,6rem)] leading-none tracking-tight text-primary transition-transform duration-300 lg:inline-block lg:group-hover:translate-x-2">
+                  {passo.n}
+                </span>
+              </div>
+
+              {/* Título */}
+              <div className="lg:col-span-4">
+                <h3 className="font-display text-[clamp(2rem,3.2vw,3.5rem)] leading-[0.94] tracking-tight text-cream">
+                  {passo.titulo}
+                </h3>
+              </div>
+
+              {/* Texto */}
+              <div className="lg:col-span-5 lg:col-start-8">
+                <p className="max-w-md text-base leading-relaxed text-cream/65">
+                  {passo.texto}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        {/* =====================================================
+            CTA / CUPOM
+        ====================================================== */}
+        <div className="mt-10 grid gap-8 lg:mt-14 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-5">
+            <p className="label-micro text-gold">
+              Primeira compra
+            </p>
+
+            <div className="mt-3 flex items-baseline gap-3">
+              <span className="font-display text-[clamp(3rem,5vw,5.5rem)] leading-none tracking-tight text-cream">
+                R$10
+              </span>
+
+              <span className="label-micro text-cream/45">
+                de desconto
+              </span>
+            </div>
+
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/60">
+              Use o cupom{" "}
+              <strong className="font-medium text-gold">
+                {taverna.cupom}
+              </strong>{" "}
+              na primeira compra pelo cardápio online.
+            </p>
+          </div>
+
+          <div className="lg:col-span-6 lg:col-start-7">
+            <div className="flex flex-wrap gap-3 lg:justify-end">
+              <ActionLink
+                href={taverna.pedidoUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Fazer meu pedido
               </ActionLink>
+
               <ActionLink
-                href={whatsappLink("Olá! Quero tirar uma dúvida sobre o pedido na Taverna Burguer.")}
+                href={whatsappLink(
+                  "Olá! Quero tirar uma dúvida sobre o pedido na Taverna Burguer.",
+                )}
                 target="_blank"
                 rel="noreferrer noopener"
                 variant="outline"
@@ -50,21 +136,19 @@ export function HowToOrder() {
               </ActionLink>
             </div>
           </div>
+        </div>
 
-          <ol className="lg:col-span-7 lg:col-start-6">
-            {passos.map((passo) => (
-              <li
-                key={passo.n}
-                className="dotted-rule flex gap-8 py-8 first:border-t-0 first:pt-0"
-              >
-                <span className="font-display text-5xl leading-none text-primary">{passo.n}</span>
-                <div>
-                  <h3 className="text-2xl tracking-tight text-cream">{passo.titulo}</h3>
-                  <p className="mt-2 max-w-md text-base text-cream/70">{passo.texto}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+        {/* =====================================================
+            RODAPÉ DA SEÇÃO
+        ====================================================== */}
+        <div className="mt-14 flex flex-col gap-3 border-t border-cream/20 pt-5 sm:flex-row sm:items-center sm:justify-between">
+          <p className="label-micro text-cream/40">
+            Salão · retirada · entrega
+          </p>
+
+          <p className="label-micro text-gold">
+            Terça a domingo
+          </p>
         </div>
       </div>
     </section>
