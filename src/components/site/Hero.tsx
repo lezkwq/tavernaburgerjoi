@@ -15,9 +15,9 @@ export function Hero() {
       </div>
 
       <div className="page-x relative mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-12 lg:items-end">
-        <div className="reveal lg:col-span-5">
+        <div className="reveal relative z-30 lg:col-span-5">
           <p className="label-micro text-gold">Hamburgueria em Joinville, Anita Garibaldi</p>
-          <h1 className="mt-5 text-display-lg text-cream">
+          <h1 className="mt-5 text-display-md text-cream">
             Grelhado
             <br />
             no
@@ -44,7 +44,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative lg:col-span-7">
+        <div className="relative z-10 lg:col-span-7 lg:-ml-16">
           <div className="reveal float-soft relative z-10 mx-auto w-[min(100%,34rem)]">
             <Plate photo={photos.duploCheddar} priority className="rotate-[-2deg]" />
           </div>
