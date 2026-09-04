@@ -17,7 +17,7 @@ export function Hero() {
       <div className="page-x relative mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-12 lg:items-end">
         <div className="reveal relative z-30 lg:col-span-5">
           <p className="label-micro text-gold">Hamburgueria em Joinville, Anita Garibaldi</p>
-          <h1 className="mt-5 text-display-md text-cream">
+          <h1 className="mt-5 font-display text-[clamp(3rem,6.6vw,6rem)] leading-[0.88] font-bold tracking-tight uppercase text-cream">
             Grelhado
             <br />
             no
