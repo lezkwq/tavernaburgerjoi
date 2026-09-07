@@ -96,8 +96,10 @@ function Index() {
         <Credibility />
         <Reviews />
         <About />
+        <div aria-hidden="true" className="checker-band" />
         <Signature />
         <Gallery />
+
         <Marquee
           items={["Cupom PRIMEIRACOMPRA", "Cardápio online", "Joinville, Anita Garibaldi"]}
         />
