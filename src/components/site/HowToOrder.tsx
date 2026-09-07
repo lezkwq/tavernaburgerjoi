@@ -26,7 +26,7 @@ export function HowToOrder() {
   return (
     <section
       id="como-pedir"
-      className="grain relative overflow-hidden bg-charcoal section-y text-cream"
+      className="grain relative overflow-hidden bg-gold section-y text-charcoal"
     >
       <div className="page-x relative mx-auto max-w-[1400px]">
         {/* =====================================================
@@ -34,7 +34,7 @@ export function HowToOrder() {
         ====================================================== */}
         <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">
-            <p className="label-micro text-gold">
+            <p className="label-micro text-primary">
               Como pedir
             </p>
 
@@ -42,13 +42,13 @@ export function HowToOrder() {
               Da vontade
               <br />
               até a
-              <span className="accent-word ml-3 text-gold lowercase">
+              <span className="accent-word ml-3 text-primary lowercase">
                 mesa
               </span>
             </h2>
           </div>
 
-          <p className="max-w-sm text-sm leading-relaxed text-cream/55 lg:col-span-4 lg:col-start-9 lg:justify-self-end lg:text-right">
+          <p className="max-w-sm text-sm leading-relaxed text-charcoal/55 lg:col-span-4 lg:col-start-9 lg:justify-self-end lg:text-right">
             Escolhe, pede e decide onde comer. O resto fica com a chapa.
           </p>
         </div>
@@ -56,11 +56,11 @@ export function HowToOrder() {
         {/* =====================================================
             PASSOS
         ====================================================== */}
-        <ol className="mt-14 border-t border-cream/20 lg:mt-20">
+        <ol className="mt-14 border-t border-charcoal/20 lg:mt-20">
           {passos.map((passo) => (
             <li
               key={passo.n}
-              className="group grid gap-5 border-b border-cream/20 py-8 sm:grid-cols-[100px_1fr] lg:grid-cols-12 lg:items-center lg:py-10"
+              className="group grid gap-5 border-b border-charcoal/20 py-8 sm:grid-cols-[100px_1fr] lg:grid-cols-12 lg:items-center lg:py-10"
             >
               {/* Número */}
               <div className="lg:col-span-2">
@@ -71,14 +71,14 @@ export function HowToOrder() {
 
               {/* Título */}
               <div className="lg:col-span-4">
-                <h3 className="font-display text-[clamp(2rem,3.2vw,3.5rem)] leading-[0.94] tracking-tight text-cream">
+                <h3 className="font-display text-[clamp(2rem,3.2vw,3.5rem)] leading-[0.94] tracking-tight text-charcoal">
                   {passo.titulo}
                 </h3>
               </div>
 
               {/* Texto */}
               <div className="lg:col-span-5 lg:col-start-8">
-                <p className="max-w-md text-base leading-relaxed text-cream/65">
+                <p className="max-w-md text-base leading-relaxed text-charcoal/65">
                   {passo.texto}
                 </p>
               </div>
@@ -91,23 +91,23 @@ export function HowToOrder() {
         ====================================================== */}
         <div className="mt-10 grid gap-8 lg:mt-14 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-5">
-            <p className="label-micro text-gold">
+            <p className="label-micro text-primary">
               Primeira compra
             </p>
 
             <div className="mt-3 flex items-baseline gap-3">
-              <span className="font-display text-[clamp(3rem,5vw,5.5rem)] leading-none tracking-tight text-cream">
+              <span className="font-display text-[clamp(3rem,5vw,5.5rem)] leading-none tracking-tight text-charcoal">
                 R$10
               </span>
 
-              <span className="label-micro text-cream/45">
+              <span className="label-micro text-charcoal/45">
                 de desconto
               </span>
             </div>
 
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/60">
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-charcoal/60">
               Use o cupom{" "}
-              <strong className="font-medium text-gold">
+              <strong className="font-medium text-primary">
                 {taverna.cupom}
               </strong>{" "}
               na primeira compra pelo cardápio online.
@@ -141,12 +141,12 @@ export function HowToOrder() {
         {/* =====================================================
             RODAPÉ DA SEÇÃO
         ====================================================== */}
-        <div className="mt-14 flex flex-col gap-3 border-t border-cream/20 pt-5 sm:flex-row sm:items-center sm:justify-between">
-          <p className="label-micro text-cream/40">
+        <div className="mt-14 flex flex-col gap-3 border-t border-charcoal/20 pt-5 sm:flex-row sm:items-center sm:justify-between">
+          <p className="label-micro text-charcoal/40">
             Salão · retirada · entrega
           </p>
 
-          <p className="label-micro text-gold">
+          <p className="label-micro text-primary">
             Terça a domingo
           </p>
         </div>

@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="topo"
-      className="grain relative overflow-hidden bg-charcoal pt-24 pb-14 text-cream lg:min-h-[820px] lg:pt-0 lg:pb-0"
+      className="grain relative overflow-hidden bg-cream pt-24 pb-14 text-charcoal lg:min-h-[820px] lg:pt-0 lg:pb-0"
     >
       {/* =========================================================
           DESKTOP — FOTO FULL BLEED
@@ -26,10 +26,10 @@ export function Hero() {
         />
 
         {/* Escurece a foto inteira para manter a identidade */}
-        <div className="absolute inset-0 bg-charcoal/55" />
+        <div className="absolute inset-0 bg-cream/70" />
 
         {/* Reforço de contraste atrás do texto */}
-        <div className="absolute inset-y-0 left-0 w-[58%] bg-charcoal/35" />
+        <div className="absolute inset-y-0 left-0 w-[58%] bg-cream/55" />
       </div>
 
       {/* =========================================================
@@ -50,11 +50,11 @@ export function Hero() {
       ========================================================= */}
       <div className="page-x relative z-20 mx-auto hidden min-h-[820px] max-w-[1400px] grid-cols-12 items-center lg:grid">
         <div className="reveal col-span-6 xl:col-span-5">
-          <p className="label-micro text-gold">
+          <p className="label-micro text-primary">
             Hamburgueria em Joinville, Anita Garibaldi
           </p>
 
-          <h1 className="mt-5 font-display text-[clamp(4.5rem,7vw,7rem)] leading-[0.84] font-bold tracking-tight uppercase text-cream">
+          <h1 className="mt-5 font-display text-[clamp(4.5rem,7vw,7rem)] leading-[0.84] font-bold tracking-tight uppercase text-charcoal">
             Grelhado
             <br />
             no
@@ -65,7 +65,7 @@ export function Hero() {
             vivo
           </h1>
 
-          <p className="mt-7 max-w-md text-base leading-relaxed text-cream/75">
+          <p className="mt-7 max-w-md text-base leading-relaxed text-charcoal/75">
             Carne no ponto que você pediu, pão macio, molho da casa e o salão
             da Taverna aceso de terça a domingo. Sem pressa na chapa, sem
             enrolação no balcão.
@@ -91,7 +91,7 @@ export function Hero() {
           </div>
         </div>
 
-        <p className="label-micro absolute right-0 bottom-10 text-right text-cream/60">
+        <p className="label-micro absolute right-0 bottom-10 text-right text-charcoal/60">
           {taverna.horario}
         </p>
       </div>
@@ -114,11 +114,11 @@ export function Hero() {
       ========================================================= */}
       <div className="page-x relative mx-auto grid max-w-[1400px] gap-8 lg:hidden">
         <div className="reveal relative z-30">
-          <p className="label-micro text-gold">
+          <p className="label-micro text-primary">
             Hamburgueria em Joinville, Anita Garibaldi
           </p>
 
-          <h1 className="mt-5 font-display text-[clamp(3rem,6.6vw,6rem)] leading-[0.88] font-bold tracking-tight uppercase text-cream">
+          <h1 className="mt-5 font-display text-[clamp(3rem,6.6vw,6rem)] leading-[0.88] font-bold tracking-tight uppercase text-charcoal">
             Grelhado
             <br />
             no
@@ -129,7 +129,7 @@ export function Hero() {
             vivo
           </h1>
 
-          <p className="mt-6 max-w-sm text-base text-cream/70">
+          <p className="mt-6 max-w-sm text-base text-charcoal/70">
             Carne no ponto que você pediu, pão macio, molho da casa e o salão
             da Taverna aceso de terça a domingo. Sem pressa na chapa, sem
             enrolação no balcão.
@@ -164,7 +164,7 @@ export function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-6 right-0 z-20 hidden w-40 rotate-[5deg] border-4 border-cream md:block">
+          <div className="absolute -bottom-6 right-0 z-20 hidden w-40 rotate-[5deg] border-4 border-primary md:block">
             <Plate photo={photos.smashDuplo} />
           </div>
         </div>
