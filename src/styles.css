@@ -68,9 +68,10 @@
   --color-charcoal: var(--charcoal);
   --color-ash: var(--ash);
 
-  --font-display: "Oswald", "Arial Narrow", sans-serif;
-  --font-body: "Inter Tight", system-ui, sans-serif;
-  --font-accent: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-accent: "Lobster", Georgia, serif;
+
 
   /*
    * Títulos um pouco mais controlados.
