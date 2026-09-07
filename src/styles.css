@@ -427,9 +427,32 @@
    RESPONSIVIDADE
    ============================================================ */
 
-@media (max-width: 1023px) {
-  @utility section-y {
+@utility section-y {
+  @media (max-width: 1023px) {
     padding-block: clamp(4rem, 9vw, 6.5rem);
+  }
+
+  @media (max-width: 767px) {
+    padding-block: 4.5rem;
+  }
+}
+
+@utility page-x {
+  @media (max-width: 767px) {
+    padding-inline: 1.25rem;
+  }
+}
+
+@utility label-micro {
+  @media (max-width: 767px) {
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+  }
+}
+
+@utility outline-word {
+  @media (max-width: 767px) {
+    -webkit-text-stroke-width: 1px;
   }
 }
 
@@ -445,25 +468,8 @@
   body {
     padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
   }
-
-  @utility page-x {
-    padding-inline: 1.25rem;
-  }
-
-  @utility section-y {
-    padding-block: 4.5rem;
-  }
-
-  @utility label-micro {
-    font-size: 0.64rem;
-
-    letter-spacing: 0.18em;
-  }
-
-  @utility outline-word {
-    -webkit-text-stroke-width: 1px;
-  }
 }
+
 
 /* ============================================================
    ACESSIBILIDADE
