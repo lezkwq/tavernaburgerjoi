@@ -54,7 +54,7 @@ export function Hero() {
             Hamburgueria em Joinville, Anita Garibaldi
           </p>
 
-          <h1 className="mt-5 font-display text-[clamp(4.5rem,7vw,7rem)] leading-[0.84] font-bold tracking-tight uppercase text-charcoal">
+          <h1 className="mt-5 font-display text-[clamp(4.5rem,7vw,7rem)] leading-[0.84] font-bold tracking-tight uppercase text-primary">
             Grelhado
             <br />
             no
@@ -118,7 +118,7 @@ export function Hero() {
             Hamburgueria em Joinville, Anita Garibaldi
           </p>
 
-          <h1 className="mt-5 font-display text-[clamp(3rem,6.6vw,6rem)] leading-[0.88] font-bold tracking-tight uppercase text-charcoal">
+          <h1 className="mt-5 font-display text-[clamp(3rem,6.6vw,6rem)] leading-[0.88] font-bold tracking-tight uppercase text-primary">
             Grelhado
             <br />
             no
