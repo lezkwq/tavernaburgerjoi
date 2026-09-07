@@ -89,15 +89,17 @@
 :root {
   --radius: 0.25rem;
 
-  --charcoal: oklch(0.16 0.008 60);
-  --smoke: oklch(0.22 0.012 55);
+  /* Retro Americana: creme quente, vermelho vivo, amarelo mostarda, preto tinta */
+  --charcoal: oklch(0.16 0.01 55);
+  --smoke: oklch(0.52 0.22 30);
   --ash: oklch(0.34 0.014 55);
 
-  --cream: oklch(0.955 0.018 82);
-  --cream-deep: oklch(0.9 0.03 80);
+  --cream: oklch(0.94 0.035 78);
+  --cream-deep: oklch(0.88 0.055 80);
 
-  --ember: oklch(0.52 0.18 32);
-  --gold: oklch(0.78 0.11 82);
+  --ember: oklch(0.585 0.235 32);
+  --gold: oklch(0.88 0.155 92);
+
 
   --background: var(--cream);
   --foreground: var(--charcoal);
