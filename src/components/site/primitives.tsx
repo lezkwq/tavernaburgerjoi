@@ -20,7 +20,7 @@ export function ActionLink({
       className={cn(
         "inline-flex items-center gap-2 rounded-full px-6 py-3 label-micro transition-transform duration-300 hover:scale-[1.04]",
         variant === "solid" && "bg-primary text-primary-foreground",
-        variant === "outline" && "border border-gold/70 text-gold",
+        variant === "outline" && "border-2 border-current text-current",
         variant === "light" && "bg-cream text-charcoal",
         className,
       )}
