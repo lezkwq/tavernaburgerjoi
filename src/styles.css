@@ -219,6 +219,10 @@
  */
 @utility page-x {
   padding-inline: clamp(1.2rem, 4.4vw, 4rem);
+
+  @media (max-width: 767px) {
+    padding-inline: 1.25rem;
+  }
 }
 
 /*
@@ -227,6 +231,14 @@
  */
 @utility section-y {
   padding-block: clamp(4rem, 7.5vw, 8rem);
+
+  @media (max-width: 1023px) {
+    padding-block: clamp(4rem, 9vw, 6.5rem);
+  }
+
+  @media (max-width: 767px) {
+    padding-block: 4.5rem;
+  }
 }
 
 /* ============================================================
@@ -243,6 +255,11 @@
 
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+  }
 }
 
 /*
@@ -279,6 +296,10 @@
   letter-spacing: -0.02em;
 
   user-select: none;
+
+  @media (max-width: 767px) {
+    -webkit-text-stroke-width: 1px;
+  }
 }
 
 /* Faixa xadrez retrô entre seções. */
@@ -426,35 +447,6 @@
 /* ============================================================
    RESPONSIVIDADE
    ============================================================ */
-
-@utility section-y {
-  @media (max-width: 1023px) {
-    padding-block: clamp(4rem, 9vw, 6.5rem);
-  }
-
-  @media (max-width: 767px) {
-    padding-block: 4.5rem;
-  }
-}
-
-@utility page-x {
-  @media (max-width: 767px) {
-    padding-inline: 1.25rem;
-  }
-}
-
-@utility label-micro {
-  @media (max-width: 767px) {
-    font-size: 0.64rem;
-    letter-spacing: 0.18em;
-  }
-}
-
-@utility outline-word {
-  @media (max-width: 767px) {
-    -webkit-text-stroke-width: 1px;
-  }
-}
 
 @media (max-width: 767px) {
   html {
